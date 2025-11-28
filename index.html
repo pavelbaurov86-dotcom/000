@@ -1426,6 +1426,17 @@
     max-width: 400px !important;
     max-height: 400px !important;
 }
+
+/* FIX HEADER PHONE SINGLE LINE */
+.header-right { white-space: nowrap; }
+.header-phone { white-space: nowrap; }
+
+/* RENT BLOCKS IN ONE LINE (2 columns) */
+#rent .equipment-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
 </style>
 <style>
 .card, .benefit, .step, .promo, .equipment-item, .review, .contact-block, .about-fact, .gallery-item, details {
@@ -1556,11 +1567,12 @@
 <nav>
 <a href="#services">Услуги и цены</a>
 <a href="#works">Наша работа</a>
-<a href="#form-block">Заказать химчистку</a>
+<a href="#form-block">Записаться</a>
 <a href="#promo">Акции</a>
+<a href="#rent">Аренда</a>
 <a href="#equipment">Оборудование</a>
 <a href="#about">О компании</a>
-<a href="#faq">FAQ</a>
+
 <a href="#contacts">Контакты</a>
 </nav>
 <div class="header-right">
@@ -1593,6 +1605,10 @@
 <a href="#promo" onclick="closeMobileMenu(); scrollToId('promo'); return false;">
                 Акции
                 
+</a>
+<a href="#rent" onclick="closeMobileMenu(); scrollToId('rent'); return false;">
+                Аренда оборудования
+
 </a>
 <a href="#equipment" onclick="closeMobileMenu(); scrollToId('equipment'); return false;">
                 Оборудование
@@ -2039,6 +2055,89 @@
 </div>
 </section>
 <!-- EQUIPMENT -->
+<section class="section-dark" id="rent">
+<div class="container">
+<div class="section-header">
+<h2 class="section-title"><span>А</span>ренда оборудования</h2>
+<p class="section-sub">
+Возьмите профессиональное оборудование для химчистки в аренду, если хотите почистить мебель или ковёр самостоятельно.
+</p>
+</div>
+
+<div class="equipment-grid">
+<div class="equipment-item">
+<div class="equipment-tag">Что сдаём</div>
+<div class="equipment-title">Экстрактор для мягкой мебели и ковров</div>
+<div class="equipment-text">
+Подойдёт для диванов, кресел, ковров и ковролина. В комплекте — шланги и насадки, при выдаче проводим короткий инструктаж.
+</div>
+</div>
+
+<div class="equipment-item">
+<div class="equipment-tag">Что сдаём</div>
+<div class="equipment-title">Пароочиститель / парогенератор</div>
+<div class="equipment-text">
+Для сложных пятен, стыков и труднодоступных мест. Можно использовать вместе с экстрактором или отдельно.
+</div>
+</div>
+
+<div class="equipment-item">
+<div class="equipment-tag">Условия</div>
+<div class="equipment-title">Сроки и оплата</div>
+<div class="equipment-text">
+Минимальный срок аренды — 1 день. Возможна аренда на несколько дней или недель. Оплата в день получения оборудования.
+</div>
+</div>
+
+<div class="equipment-item">
+<div class="equipment-tag">Условия</div>
+<div class="equipment-title">Залог и ответственность</div>
+<div class="equipment-text">
+Берём возвратный залог за каждую единицу оборудования. Клиент отвечает за сохранность техники на время аренды.
+</div>
+</div>
+</div>
+
+<div class="benefits-grid" style="margin-top:18px;">
+<div class="benefit">
+<div class="benefit-num">01</div>
+<div>
+<div class="benefit-title">Профессиональная техника</div>
+<div class="benefit-text">
+То же оборудование, которым мы выезжаем к клиентам: мощное, исправное и с безопасной химией.
+</div>
+</div>
+</div>
+
+<div class="benefit">
+<div class="benefit-num">02</div>
+<div>
+<div class="benefit-title">Подскажем, как пользоваться</div>
+<div class="benefit-text">
+Покажем, как правильно работать с экстрактором и химией, чтобы не испортить поверхность и получить лучший результат.
+</div>
+</div>
+</div>
+
+<div class="benefit">
+<div class="benefit-num">03</div>
+<div>
+<div class="benefit-title">Самовывоз или доставка</div>
+<div class="benefit-text">
+Можно забрать оборудование самостоятельно или заказать платную доставку и забор после окончания аренды.
+</div>
+</div>
+</div>
+</div>
+
+<div class="hero-cta" style="margin-top:24px;">
+<button class="btn btn-primary" onclick="scrollToId('order')">Оставить заявку на аренду</button>
+<div class="hero-note">
+Позвоните или оставьте заявку — подберём оборудование под вашу задачу.
+</div>
+</div>
+</div>
+</section>
 <section class="section-dark" id="equipment">
 <div class="container">
 <div class="section-header">
@@ -2129,53 +2228,7 @@
 </div>
 </section>
 <!-- FAQ -->
-<section class="section-dark" id="faq">
-<div class="container">
-<div class="section-header">
-<h2 class="section-title"><span>Ч</span>астые вопросы</h2>
-<p class="section-sub">
-</p>
-</div>
-<div class="faq-list">
-<details>
-<summary>Как проходит химчистка мебели?</summary>
-<p>
-                        Сначала убираем пыль, затем наносим состав, который «поднимает» грязь. После этого экстрактором вымываем состав и загрязнения и промываем мебель нейтрализатором.
-                    </p>
-</details>
-<details>
-<summary>Безопасно ли это для детей и животных?</summary>
-<p>
-                        Да, используем специализированные составы с сертификатами. После чистки дополнительно промываем ткань, чтобы убрать остатки химии.
-                    </p>
-</details>
-<details>
-<summary>Все пятна уйдут?</summary>
-<p>
-                        Большинство свежих загрязнений удаляются полностью. Старые и «запечённые» пятна могут посветлеть, но не исчезнуть до конца — об этом обязательно предупреждаем заранее.
-                    </p>
-</details>
-<details>
-<summary>Сколько сохнет диван после чистки?</summary>
-<p>
-                        В среднем 6–12 часов, в зависимости от ткани, температуры и вентиляции. Обогреватель или вентилятор ускорят сушку.
-                    </p>
-</details>
-<details>
-<summary>Работаете с организациями?</summary>
-<p>
-                        Да, выезжаем в офисы, кафе, салоны. Возможно безналичное закрытие и выезд в нерабочее время.
-                    </p>
-</details>
-<details>
-<summary>Как часто нужно делать химчистку?</summary>
-<p>
-                        В среднем раз в год. При наличии животных и маленьких детей — чаще, по необходимости.
-                    </p>
-</details>
-</div>
-</div>
-</section>
+
 <!-- CONTACTS -->
 <section id="contacts">
 <div class="container">
